@@ -52,6 +52,7 @@ kubectl get namespace
 ```
 
 ---
+Expose svc
 
 ```bash
 kubectl port-forward svc/kind-prometheus-kube-prome-prometheus -n monitoring 9090:9090 --address=0.0.0.0 &
