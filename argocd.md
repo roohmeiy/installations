@@ -1,4 +1,4 @@
-#
+
 - <b id="Argo">Install and Configure ArgoCD (Master Machine)</b>
   - <b>Create argocd namespace</b>
   ```bash
@@ -43,4 +43,16 @@
   ```
   - <b>Username: admin</b>
   - <b> Now, go to <mark>User Info</mark> and update your argocd password
-#
+
+Login argocd cli
+```bash
+argocd login ip:port --username admin
+```
+To check cluster name
+```bash
+kubectl config get-contexts
+```
+To create cluster in argocd
+```bash
+argocd cluster add <context name> --name <cluster name>
+```
