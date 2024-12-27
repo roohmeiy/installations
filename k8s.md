@@ -59,3 +59,9 @@ kubectl port-forward svc/kind-prometheus-kube-prome-prometheus -n monitoring 909
 kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address=0.0.0.0 &
 ```
 
+---
+Grafana password
+
+```bash
+kubectl get secret --namespace prometheus stable-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+```
