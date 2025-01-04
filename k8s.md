@@ -21,6 +21,29 @@ Installing Kubernetes Dashboard
 
 ---
 
+-  node Kind cluster create(file in same repo)
+
+  ```bash
+  kind create cluster --config=kind-cluster-config.yml --name=<clustername>
+  ```
+
+- Check cluster information:
+  ```bash
+  kubectl cluster-info --context kind-<clustername>
+  kubectl get nodes
+  kind get clusters
+  kubectl config use-context <context-name>
+  kubectl config get-contexts
+  kubectl config current-context
+  ```
+
+- Delete the Kind cluster:
+  ```bash
+  kind delete cluster --name=<clustername>
+  ```
+
+---
+
 Install HELM
 
 ```bash
