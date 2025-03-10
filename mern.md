@@ -27,7 +27,7 @@ PORT=3500
 
 npm install
 node index.js
-suddo vi index.js
+sudo vi index.js
 require('dotenv').config();  // Ensure env variables are loaded
 ```
 
