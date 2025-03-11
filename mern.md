@@ -52,3 +52,5 @@ MONGO_CONN_STR=mongodb://admin:secretpassword@localhost:27017/mydatabase?authSou
 USE_DB_AUTH=true
 PORT=3500
 ```
+
+note - localhost= frontend and backend, container name= mongodb
