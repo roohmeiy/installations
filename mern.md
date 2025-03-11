@@ -14,7 +14,6 @@ npm run build
 ```
 If backend rule is not configured in react service directly than add with env var
 ```bash
-sudo vi .env
 REACT_APP_BACKEND_URL=http://localhost:3500/api/tasks
 ```
 
